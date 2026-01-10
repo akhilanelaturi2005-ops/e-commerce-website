@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gatekeeper.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere - groceries</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Groceries</h1>
+        <a href="index.html">🏠 Home</a> | <a href="cart.html">🛒 Cart</a>
+    </header>
+
+    <section class="product-grid">
+        <div class="product">
+            <img src="grocery1.jpeg" alt="Organic Rice">
+            <h2>Organic Rice</h2>
+            <p>High-quality, organic  rice (5kg).</p>
+            <p><strong>Price: $12.99</strong></p>
+            <button onclick="addToCart('Organic Rice', 12.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="grocery2.jpeg" alt="Fresh Vegetables">
+            <h2>Fresh Vegetable Pack</h2>
+            <p>Mixed fresh vegetables (1kg) directly from the farm.</p>
+            <p><strong>Price: $8.99</strong></p>
+            <button onclick="addToCart('Fresh Vegetable Pack', 8.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="grocery3.jpeg" alt="Olive Oil">
+            <h2>Extra Virgin Olive Oil</h2>
+            <p>Premium quality cold-pressed extra virgin olive oil (1L).</p>
+            <p><strong>Price: $15.99</strong></p>
+            <button onclick="addToCart('Extra Virgin Olive Oil', 15.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+    color: #0f0909;
+    background-color: rgb(182, 211, 222);
+}
+
+header {
+    background: #333;
+    color: rgb(21, 190, 69);
+    padding: 15px;
+}
+
+nav a {
+    color: rgb(201, 61, 30);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Categories Grid */
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-grid a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+
+.category-grid img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+/* Sale Section */
+.sale-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.sale .product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+}
+
+.sale .product img {
+    width: 150px;
+    height: 150px;
+}
+
+.sale .product button {
+    background: #ff5722;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.sale .product button:hover {
+    background: #e64a19;
+}
+.checkout-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.checkout-container h2 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}

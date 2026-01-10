@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gatekeeper.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere - track</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* This section removes the dots and centers the text */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #b9d1d9; /* Matching your image background */
+            padding-top: 50px;
+        }
+
+        .tracking-steps {
+            list-style-type: none; /* REMOVES THE DOTS */
+            padding: 0;            /* Removes default indentation */
+            margin-bottom: 20px;
+        }
+
+        .step {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 0;
+            width: 100%; /* Spans across as seen in your image */
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Track Your Order</h2>
+    
+    <div id="order-tracking">
+        <ul class="tracking-steps">
+            <li class="step" id="step1">Order Placed ✅</li>
+            <li class="step" id="step2">Packed 📦</li>
+            <li class="step" id="step3">Shipped 🚚</li>
+            <li class="step" id="step4">Out for Delivery 🏠</li>
+            <li class="step" id="step5">Delivered ✅</li>
+        </ul>
+    </div>
+
+    <button onclick="updateOrderStatus()">Update Status</button>
+
+    <script src="script.js" defer></script>
+    <script src="track-order.js"></script>
+</body>
+</html>

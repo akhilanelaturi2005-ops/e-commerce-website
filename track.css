@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#order-tracking {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.tracking-steps {
+    list-style-type: none;
+    padding: 0;
+}
+
+.step {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #4CAF50;
+    color: white;
+}

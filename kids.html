@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gatekeeper.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere - kids</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kids' Corner</h1>
+        <a href="index.html">🏠 Home</a> | <a href="cart.html">🛒 Cart</a>
+    </header>
+
+    <section class="product-grid">
+        <div class="product">
+            <img src="kids1.jpeg" alt="Remote Control Car">
+            <h2>Remote Control Car</h2>
+            <p>High-speed RC car with rechargeable battery.</p>
+            <p><strong>Price: $24.99</strong></p>
+            <button onclick="addToCart('Remote Control Car', 24.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="kids2.jpeg" alt="Plush Teddy Bear">
+            <h2>Plush Teddy Bear</h2>
+            <p>Soft and cuddly teddy bear for kids of all ages.</p>
+            <p><strong>Price: $14.99</strong></p>
+            <button onclick="addToCart('Plush Teddy Bear', 14.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="kids3.jpeg" alt="Children's Story Book">
+            <h2>Children's Story Book</h2>
+            <p>A collection of bedtime stories with colorful illustrations.</p>
+            <p><strong>Price: $9.99</strong></p>
+            <button onclick="addToCart('Children\'s Story Book', 9.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gatekeeper.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere - womens</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Women's Collection</h1>
+        <a href="index.html">🏠 Home</a> | <a href="cart.html">🛒 Cart</a>
+    </header>
+
+    <section class="product-grid">
+        <div class="product">
+            <img src="womens1.jpeg" alt="Elegant Summer Dress">
+            <h2>Elegant Summer Dress</h2>
+            <p>Lightweight and stylish dress perfect for any occasion.</p>
+            <p><strong>Price: $29.99</strong></p>
+            <button onclick="addToCart('Elegant Summer Dress', 29.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="womens2.jpeg" alt="Luxury Handbag">
+            <h2>Luxury Handbag</h2>
+            <p>High-quality leather handbag with spacious compartments.</p>
+            <p><strong>Price: $59.99</strong></p>
+            <button onclick="addToCart('Luxury Handbag', 59.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="womens3.jpeg" alt="Elegant Heels">
+            <h2>Elegant Heels</h2>
+            <p>Comfortable and trendy heels suitable for parties and work.</p>
+            <p><strong>Price: $49.99</strong></p>
+            <button onclick="addToCart('Elegant Heels', 49.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

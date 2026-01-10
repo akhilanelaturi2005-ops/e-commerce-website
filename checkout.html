@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gatekeeper.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere - checkout</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+    </header>
+
+    <section class="checkout-container">
+        <h2>Order Summary</h2>
+        <div id="order-summary"></div>
+        <h3>Total: <span id="total-price">$0.00</span></h3>
+
+        <h2>Billing & Shipping Details</h2>
+        <form id="checkout-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" required>
+                <option value="credit-card">Credit/Debit Card</option>
+                <option value="cod">Cash on Delivery</option>
+                <option value="paypal">PayPal</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            displayOrderSummary();
+
+            document.getElementById("checkout-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Order placed successfully! 🎉");
+                localStorage.removeItem("cart");
+                window.location.href = "index.html";
+            });
+        });
+
+        function displayOrderSummary() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let orderSummaryDiv = document.getElementById("order-summary");
+            let totalPrice = 0;
+
+            if (cart.length === 0) {
+                orderSummaryDiv.innerHTML = "<p>Your cart is empty.</p>";
+                return;
+            }
+
+            orderSummaryDiv.innerHTML = cart.map(item => {
+                totalPrice += item.price;
+                return <p>${item.name} - $${item.price.toFixed(2)}</p>;
+            }).join("");
+
+            document.getElementById("total-price").textContent = 'Total:$${item.price.toFixed(2)}'
+        }
+    </script>
+
+</body>
+</html>

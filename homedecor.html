@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gatekeeper.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere - homedecor</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Home Decor Collection</h1>
+        <a href="index.html">🏠 Home</a> | <a href="cart.html">🛒 Cart</a>
+    </header>
+
+    <section class="product-grid">
+        <div class="product">
+            <img src="homedecor1.jpeg" alt="Wall Art Painting">
+            <h2>Wall Art Painting</h2>
+            <p>Beautiful canvas painting to enhance your living space.</p>
+            <p><strong>Price: $39.99</strong></p>
+            <button onclick="addToCart('Wall Art Painting', 39.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="homedecor2.jpeg" alt="Decorative Lamp">
+            <h2>Decorative Table Lamp</h2>
+            <p>Elegant lamp with warm lighting for cozy ambiance.</p>
+            <p><strong>Price: $29.99</strong></p>
+            <button onclick="addToCart('Decorative Table Lamp', 29.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="homedecor3.jpeg" alt="Artificial Plant">
+            <h2>Artificial Indoor Plant</h2>
+            <p>Low-maintenance greenery to brighten up your home.</p>
+            <p><strong>Price: $19.99</strong></p>
+            <button onclick="addToCart('Artificial Indoor Plant', 19.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

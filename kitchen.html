@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gatekeeper.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopSphere - kitchen</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Kitchen Utensils</h1>
+        <a href="index.html">🏠 Home</a> | <a href="cart.html">🛒 Cart</a>
+    </header>
+
+    <section class="product-grid">
+        <div class="product">
+            <img src="kitchen1.jpeg" alt="Non-Stick Pan">
+            <h2>Non-Stick Pan</h2>
+            <p>Durable non-stick frying pan for easy cooking.</p>
+            <p><strong>Price: $19.99</strong></p>
+            <button onclick="addToCart('Non-Stick Pan', 19.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="kitchen2.jpeg" alt="Knife Set">
+            <h2>Premium Knife Set</h2>
+            <p>Stainless steel knife set with ergonomic handles.</p>
+            <p><strong>Price: $14.99</strong></p>
+            <button onclick="addToCart('Premium Knife Set', 14.99)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="kitchen3.jpeg" alt="Electric Kettle">
+            <h2>Electric Kettle</h2>
+            <p>Fast-boil electric kettle with auto shut-off.</p>
+            <p><strong>Price: $29.99</strong></p>
+            <button onclick="addToCart('Electric Kettle', 29.99)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

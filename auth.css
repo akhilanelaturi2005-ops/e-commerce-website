@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+.auth-box {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.auth-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-box a {
+    color: #ff4d4d;
+    text-decoration: none;
+}

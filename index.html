@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="gatekeeper.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ShopSphere - Your World of Smart Shopping</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="cart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>ShopSphere</h1>
+        <p>Your World of Smart Shopping</p>
+        <nav>
+            <a href="cart.html">🛒 Cart</a>
+            <a href="track.html">📦 Track Order</a>
+            <a href="contact.html">📞 Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Slideshow for Featured Products -->
+    <section class="slideshow-container">
+        <div class="slide fade">
+            <img src="featured1.jpeg" alt="Featured Product 1">
+        </div>
+        <div class="slide fade">
+            <img src="featured2.jpeg" alt="Featured Product 2">
+        </div>
+        <div class="slide fade">
+            <img src="featured3.jpeg" alt="Featured Product 3">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Explore Categories</h2>
+        <div class="category-grid">
+            <a href="homedecor.html"><img src="homedec.jpeg" alt="Home Decor"><p>Home Decor</p></a>
+            <a href="kitchen.html"><img src="kitchen.jpeg" alt="Kitchen Utensils"><p>Kitchen Utensils</p></a>
+            <a href="womens.html"><img src="women's.jpeg" alt="Women's Fashion"><p>Women's Fashion</p></a>
+            <a href="mens.html"><img src="men's.jpeg" alt="men's Fashion"><p>Men's Fashion</p></a>
+            <a href="kids.html"><img src="kid's.jpeg" alt="Kids' Corner"><p>Kids' Corner</p></a>
+            <a href="groceries.html"><img src="grocies.jpeg" alt="Groceries"><p>Groceries</p></a>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="sale">
+        <h2>Special Offers</h2>
+        <div class="sale-grid">
+            <div class="product">
+                <img src="sales1.jpeg" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <p><del>$99.99</del> <strong>$69.99</strong></p>
+                <button onclick="addToCart('Smartwatch', 69.99)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="sales2.jpeg" alt="Coffee Maker">
+                <h3>Coffee Maker</h3>
+                <p><del>$79.99</del> <strong>$49.99</strong></p>
+                <button onclick="addToCart('Coffee Maker', 49.99)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="sales3.jpeg" alt="Wireless Earbuds">
+                <h3>Wireless Earbuds</h3>
+                <p><del>$59.99</del> <strong>$39.99</strong></p>
+                <button onclick="addToCart('Wireless Earbuds', 39.99)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
